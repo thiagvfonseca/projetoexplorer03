@@ -1,7 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box; /* Essa propriedade permite que seja aplicado preenchimento interno na caixa sem que a largura seja alterada. */
+}
+
+body,
+input,
+button,
+select,
+textarea {
+  font-family: "Poppins", sans-serif;
+}
+
 body {
   background: #d9d9d9;
-
-  font-family: "Poppins", sans-serif;
 }
 
 body::before {
@@ -36,6 +49,8 @@ header h1 {
   font-weight: bold;
   font-size: 36px;
   line-height: 42px;
+
+  margin-bottom: 24px;
 }
 
 header p {
@@ -58,6 +73,12 @@ fieldset {
   border: none;
 }
 
+.fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
 fieldset legend {
   font-family: "Archivo", sans-serif;
   font-size: 24px;
@@ -68,4 +89,42 @@ fieldset legend {
 
   border-bottom: 1px solid #e6e6f0;
   padding: 16px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper label {
+  color: #4e4958;
+
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+
+.input-wrapper label span {
+  color: #c1bccc;
+
+  font-size: 12px;
+  line-height: 20px;
+
+  margin-left: 12px;
+}
+
+.input-wrapper input {
+  background: #fafafc;
+
+  border: 1px solid #e6e6f0;
+  border-radius: 8px;
+
+  height: 56px;
+
+  padding: 0 24px;
+
+  font-size: 16px;
+  line-height: 26px;
+
+  color: #c1bccc;
 }
